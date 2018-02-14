@@ -41,119 +41,119 @@ public protocol FloatOrDouble: FloatingPoint {
 }
 
 // MARK: - pow
-public func pow<F: FloatOrDouble>(_ x: F, _ y: F) -> F {
+@_transparent public func pow<F: FloatOrDouble>(_ x: F, _ y: F) -> F {
     return F.pow(x, y)
 }
 
 // MARK: - exp
-public func exp<F: FloatOrDouble>(_ x: F) -> F {
+@_transparent public func exp<F: FloatOrDouble>(_ x: F) -> F {
     return F.exp(x)
 }
 
-public func exp2<F: FloatOrDouble>(_ x: F) -> F {
+@_transparent public func exp2<F: FloatOrDouble>(_ x: F) -> F {
     return F.exp2(x)
 }
 
-public func expm1<F: FloatOrDouble>(_ x: F) -> F {
+@_transparent public func expm1<F: FloatOrDouble>(_ x: F) -> F {
     return F.expm1(x)
 }
 
 
 // MARK: - cbrt
-public func cbrt<F: FloatOrDouble>(_ x: F) -> F {
+@_transparent public func cbrt<F: FloatOrDouble>(_ x: F) -> F {
     return F.cbrt(x)
 }
 
 // MARK: - log
-public func log<F: FloatOrDouble>(_ x: F) -> F {
+@_transparent public func log<F: FloatOrDouble>(_ x: F) -> F {
     return F.log(x)
 }
 
-public func log2<F: FloatOrDouble>(_ x: F) -> F {
+@_transparent public func log2<F: FloatOrDouble>(_ x: F) -> F {
     return F.log2(x)
 }
 
-public func log10<F: FloatOrDouble>(_ x: F) -> F {
+@_transparent public func log10<F: FloatOrDouble>(_ x: F) -> F {
     return F.log10(x)
 }
 
-public func log1p<F: FloatOrDouble>(_ x: F) -> F {
+@_transparent public func log1p<F: FloatOrDouble>(_ x: F) -> F {
     return F.log1p(x)
 }
 
-public func logb<F: FloatOrDouble>(_ x: F) -> F {
+@_transparent public func logb<F: FloatOrDouble>(_ x: F) -> F {
     return F.logb(x)
 }
 
 // MARK: - trigonometric functions
-public func sin<F: FloatOrDouble>(_ x: F) -> F {
+@_transparent public func sin<F: FloatOrDouble>(_ x: F) -> F {
     return F.sine(x)
 }
 
-public func cos<F: FloatOrDouble>(_ x: F) -> F {
+@_transparent public func cos<F: FloatOrDouble>(_ x: F) -> F {
     return F.cosine(x)
 }
 
-public func tan<F: FloatOrDouble>(_ x: F) -> F {
+@_transparent public func tan<F: FloatOrDouble>(_ x: F) -> F {
     return F.tangent(x)
 }
 
 // MARK: - inverse trigonometric function
-public func asin<F: FloatOrDouble>(_ x: F) -> F {
+@_transparent public func asin<F: FloatOrDouble>(_ x: F) -> F {
     return F.arcsine(x)
 }
 
-public func acos<F: FloatOrDouble>(_ x: F) -> F {
+@_transparent public func acos<F: FloatOrDouble>(_ x: F) -> F {
     return F.arccosine(x)
 }
 
-public func atan<F: FloatOrDouble>(_ x: F) -> F {
+@_transparent public func atan<F: FloatOrDouble>(_ x: F) -> F {
     return F.arctangent(x)
 }
 
 // MARK: - hyperbolic functions
-public func sinh<F: FloatOrDouble>(_ x: F) -> F {
+@_transparent public func sinh<F: FloatOrDouble>(_ x: F) -> F {
     return F.hyperbolicSine(x)
 }
 
-public func cosh<F: FloatOrDouble>(_ x: F) -> F {
+@_transparent public func cosh<F: FloatOrDouble>(_ x: F) -> F {
     return F.hyperbolicCosine(x)
 }
 
-public func tanh<F: FloatOrDouble>(_ x: F) -> F {
+@_transparent public func tanh<F: FloatOrDouble>(_ x: F) -> F {
     return F.hyperbolicTangent(x)
 }
 
 // MARK: - inverse hyperbolic function
-public func asinh<F: FloatOrDouble>(_ x: F) -> F {
+@_transparent public func asinh<F: FloatOrDouble>(_ x: F) -> F {
     return F.areaHyperbolicSine(x)
 }
 
-public func acosh<F: FloatOrDouble>(_ x: F) -> F {
+@_transparent public func acosh<F: FloatOrDouble>(_ x: F) -> F {
     return F.areaHyperbolicCosine(x)
 }
 
-public func atanh<F: FloatOrDouble>(_ x: F) -> F {
+@_transparent public func atanh<F: FloatOrDouble>(_ x: F) -> F {
     return F.areaHyperbolicTangent(x)
 }
 
 // MARK: - etc
-public func rint<F: FloatOrDouble>(_ x: F) -> F {
+@_transparent public func rint<F: FloatOrDouble>(_ x: F) -> F {
     return F.rint(x)
 }
 
-public func nearbyint<F: FloatOrDouble>(_ x: F) -> F {
+@_transparent public func nearbyint<F: FloatOrDouble>(_ x: F) -> F {
     return F.nearbyint(x)
 }
 
-public func nextafter<F: FloatOrDouble>(_ lhs: F, _ rhs: F) -> F {
+@_transparent public func nextafter<F: FloatOrDouble>(_ lhs: F, _ rhs: F) -> F {
     return F.nextafter(lhs, rhs: rhs)
 }
 
-public func hypot<F: FloatOrDouble>(_ x: F, _ y: F) -> F {
+@_transparent public func hypot<F: FloatOrDouble>(_ x: F, _ y: F) -> F {
     return F.hypot(x, y)
 }
 
-public func copysign<F: FloatOrDouble>(_ x: F, _ y: F) -> F {
+@_transparent public func copysign<F: FloatOrDouble>(_ x: F, _ y: F) -> F {
     return F.copysign(x, y)
 }
