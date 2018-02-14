@@ -111,6 +111,10 @@ public protocol FloatOrDouble: FloatingPoint {
     return F.arctangent(x)
 }
 
+@_transparent public func atan2<F: FloatOrDouble>(_ y: F, _ x: F) -> F {
+    return F.arctangent2(y, x)
+}
+
 // MARK: - hyperbolic functions
 @_transparent public func sinh<F: FloatOrDouble>(_ x: F) -> F {
     return F.hyperbolicSine(x)
