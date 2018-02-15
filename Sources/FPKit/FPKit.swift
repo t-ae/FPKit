@@ -16,22 +16,22 @@ public protocol FloatOrDouble: FloatingPoint {
     static func log1p(_ x: Self) -> Self
     static func logb(_ x: Self) -> Self
     
-    static func sine(_ x: Self) -> Self
-    static func cosine(_ x: Self) -> Self
-    static func tangent(_ x: Self) -> Self
+    static func sin(_ x: Self) -> Self
+    static func cos(_ x: Self) -> Self
+    static func tan(_ x: Self) -> Self
     
-    static func arcsine(_ x: Self) -> Self
-    static func arccosine(_ x: Self) -> Self
-    static func arctangent(_ x: Self) -> Self
-    static func arctangent2(_ y: Self, _ x: Self) -> Self
+    static func asin(_ x: Self) -> Self
+    static func acos(_ x: Self) -> Self
+    static func atan(_ x: Self) -> Self
+    static func atan2(_ y: Self, _ x: Self) -> Self
     
-    static func hyperbolicSine(_ x: Self) -> Self
-    static func hyperbolicCosine(_ x: Self) -> Self
-    static func hyperbolicTangent(_ x: Self) -> Self
+    static func sinh(_ x: Self) -> Self
+    static func cosh(_ x: Self) -> Self
+    static func tanh(_ x: Self) -> Self
     
-    static func areaHyperbolicSine(_ x: Self) -> Self
-    static func areaHyperbolicCosine(_ x: Self) -> Self
-    static func areaHyperbolicTangent(_ x: Self) -> Self
+    static func asinh(_ x: Self) -> Self
+    static func acosh(_ x: Self) -> Self
+    static func atanh(_ x: Self) -> Self
     
     static func rint(_ x: Self) -> Self
     static func nearbyint(_ x: Self) -> Self
@@ -87,58 +87,58 @@ public protocol FloatOrDouble: FloatingPoint {
 
 // MARK: - trigonometric functions
 @_transparent public func sin<F: FloatOrDouble>(_ x: F) -> F {
-    return F.sine(x)
+    return F.sin(x)
 }
 
 @_transparent public func cos<F: FloatOrDouble>(_ x: F) -> F {
-    return F.cosine(x)
+    return F.cos(x)
 }
 
 @_transparent public func tan<F: FloatOrDouble>(_ x: F) -> F {
-    return F.tangent(x)
+    return F.tan(x)
 }
 
 // MARK: - inverse trigonometric function
 @_transparent public func asin<F: FloatOrDouble>(_ x: F) -> F {
-    return F.arcsine(x)
+    return F.asin(x)
 }
 
 @_transparent public func acos<F: FloatOrDouble>(_ x: F) -> F {
-    return F.arccosine(x)
+    return F.acos(x)
 }
 
 @_transparent public func atan<F: FloatOrDouble>(_ x: F) -> F {
-    return F.arctangent(x)
+    return F.atan(x)
 }
 
 @_transparent public func atan2<F: FloatOrDouble>(_ y: F, _ x: F) -> F {
-    return F.arctangent2(y, x)
+    return F.atan2(y, x)
 }
 
 // MARK: - hyperbolic functions
 @_transparent public func sinh<F: FloatOrDouble>(_ x: F) -> F {
-    return F.hyperbolicSine(x)
+    return F.sinh(x)
 }
 
 @_transparent public func cosh<F: FloatOrDouble>(_ x: F) -> F {
-    return F.hyperbolicCosine(x)
+    return F.cosh(x)
 }
 
 @_transparent public func tanh<F: FloatOrDouble>(_ x: F) -> F {
-    return F.hyperbolicTangent(x)
+    return F.tanh(x)
 }
 
 // MARK: - inverse hyperbolic function
 @_transparent public func asinh<F: FloatOrDouble>(_ x: F) -> F {
-    return F.areaHyperbolicSine(x)
+    return F.asinh(x)
 }
 
 @_transparent public func acosh<F: FloatOrDouble>(_ x: F) -> F {
-    return F.areaHyperbolicCosine(x)
+    return F.acosh(x)
 }
 
 @_transparent public func atanh<F: FloatOrDouble>(_ x: F) -> F {
-    return F.areaHyperbolicTangent(x)
+    return F.atanh(x)
 }
 
 // MARK: - etc

@@ -47,57 +47,57 @@ extension CGFloat: FloatOrDouble {
     }
     
     
-    @_transparent public static func sine(_ x: CGFloat) -> CGFloat {
+    @_transparent public static func sin(_ x: CGFloat) -> CGFloat {
         return Foundation.sin(x)
     }
     
-    @_transparent public static func cosine(_ x: CGFloat) -> CGFloat {
+    @_transparent public static func cos(_ x: CGFloat) -> CGFloat {
         return Foundation.cos(x)
     }
     
-    @_transparent public static func tangent(_ x: CGFloat) -> CGFloat {
+    @_transparent public static func tan(_ x: CGFloat) -> CGFloat {
         return Foundation.tan(x)
     }
     
     
-    @_transparent public static func arcsine(_ x: CGFloat) -> CGFloat {
+    @_transparent public static func asin(_ x: CGFloat) -> CGFloat {
         return Foundation.asin(x)
     }
     
-    @_transparent public static func arccosine(_ x: CGFloat) -> CGFloat {
+    @_transparent public static func acos(_ x: CGFloat) -> CGFloat {
         return Foundation.acos(x)
     }
     
-    @_transparent public static func arctangent(_ x: CGFloat) -> CGFloat {
+    @_transparent public static func atan(_ x: CGFloat) -> CGFloat {
         return Foundation.atan(x)
     }
     
-    @_transparent public static func arctangent2(_ y: CGFloat, _ x: CGFloat) -> CGFloat {
+    @_transparent public static func atan2(_ y: CGFloat, _ x: CGFloat) -> CGFloat {
         return Foundation.atan2(y, x)
     }
     
     
-    @_transparent public static func hyperbolicSine(_ x: CGFloat) -> CGFloat {
+    @_transparent public static func sinh(_ x: CGFloat) -> CGFloat {
         return Foundation.sinh(x)
     }
     
-    @_transparent public static func hyperbolicCosine(_ x: CGFloat) -> CGFloat {
+    @_transparent public static func cosh(_ x: CGFloat) -> CGFloat {
         return Foundation.cosh(x)
     }
     
-    @_transparent public static func hyperbolicTangent(_ x: CGFloat) -> CGFloat {
+    @_transparent public static func tanh(_ x: CGFloat) -> CGFloat {
         return Foundation.tanh(x)
     }
     
-    @_transparent public static func areaHyperbolicSine(_ x: CGFloat) -> CGFloat {
+    @_transparent public static func asinh(_ x: CGFloat) -> CGFloat {
         return Foundation.asinh(x)
     }
     
-    @_transparent public static func areaHyperbolicCosine(_ x: CGFloat) -> CGFloat {
+    @_transparent public static func acosh(_ x: CGFloat) -> CGFloat {
         return Foundation.acosh(x)
     }
     
-    @_transparent public static func areaHyperbolicTangent(_ x: CGFloat) -> CGFloat {
+    @_transparent public static func atanh(_ x: CGFloat) -> CGFloat {
         return Foundation.atanh(x)
     }
     

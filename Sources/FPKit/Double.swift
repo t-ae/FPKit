@@ -47,57 +47,57 @@ extension Double: FloatOrDouble {
     }
     
     
-    @_transparent public static func sine(_ x: Double) -> Double {
+    @_transparent public static func sin(_ x: Double) -> Double {
         return Foundation.sin(x)
     }
     
-    @_transparent public static func cosine(_ x: Double) -> Double {
+    @_transparent public static func cos(_ x: Double) -> Double {
         return Foundation.cos(x)
     }
     
-    @_transparent public static func tangent(_ x: Double) -> Double {
+    @_transparent public static func tan(_ x: Double) -> Double {
         return Foundation.tan(x)
     }
     
     
-    @_transparent public static func arcsine(_ x: Double) -> Double {
+    @_transparent public static func asin(_ x: Double) -> Double {
         return Foundation.asin(x)
     }
     
-    @_transparent public static func arccosine(_ x: Double) -> Double {
+    @_transparent public static func acos(_ x: Double) -> Double {
         return Foundation.acos(x)
     }
     
-    @_transparent public static func arctangent(_ x: Double) -> Double {
+    @_transparent public static func atan(_ x: Double) -> Double {
         return Foundation.atan(x)
     }
     
-    @_transparent public static func arctangent2(_ y: Double, _ x: Double) -> Double {
+    @_transparent public static func atan2(_ y: Double, _ x: Double) -> Double {
         return Foundation.atan2(y, x)
     }
     
     
-    @_transparent public static func hyperbolicSine(_ x: Double) -> Double {
+    @_transparent public static func sinh(_ x: Double) -> Double {
         return Foundation.sinh(x)
     }
     
-    @_transparent public static func hyperbolicCosine(_ x: Double) -> Double {
+    @_transparent public static func cosh(_ x: Double) -> Double {
         return Foundation.cosh(x)
     }
     
-    @_transparent public static func hyperbolicTangent(_ x: Double) -> Double {
+    @_transparent public static func tanh(_ x: Double) -> Double {
         return Foundation.tanh(x)
     }
     
-    @_transparent public static func areaHyperbolicSine(_ x: Double) -> Double {
+    @_transparent public static func asinh(_ x: Double) -> Double {
         return Foundation.asinh(x)
     }
     
-    @_transparent public static func areaHyperbolicCosine(_ x: Double) -> Double {
+    @_transparent public static func acosh(_ x: Double) -> Double {
         return Foundation.acosh(x)
     }
     
-    @_transparent public static func areaHyperbolicTangent(_ x: Double) -> Double {
+    @_transparent public static func atanh(_ x: Double) -> Double {
         return Foundation.atanh(x)
     }
     
