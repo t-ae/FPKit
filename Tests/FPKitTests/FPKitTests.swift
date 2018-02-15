@@ -9,8 +9,12 @@ class FPKitTests: XCTestCase {
     }
     
     func testSin() {
-        let x = Double.pi*3
+        let a = Float.pi*3.1
+        let b = Double.pi*4.2
+        let c = CGFloat.pi*5.3
         
-        XCTAssertEqual(sinFunc(x), sin(x))
+        XCTAssertEqual(sinFunc(a), sin(a))
+        XCTAssertEqual(sinFunc(b), sin(b))
+        XCTAssertEqual(sinFunc(c), sin(c))
     }
 }
