@@ -110,7 +110,7 @@ extension Float: FloatOrDouble {
         return Foundation.nearbyint(x)
     }
     
-    @_transparent public static func nextafter(_ lhs: Float, rhs: Float) -> Float {
+    @_transparent public static func nextafter(_ lhs: Float, _ rhs: Float) -> Float {
         return Foundation.nextafter(lhs, rhs)
     }
     

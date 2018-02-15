@@ -35,7 +35,7 @@ public protocol FloatOrDouble: FloatingPoint {
     
     static func rint(_ x: Self) -> Self
     static func nearbyint(_ x: Self) -> Self
-    static func nextafter(_ lhs: Self, rhs: Self) -> Self
+    static func nextafter(_ lhs: Self, _ rhs: Self) -> Self
     static func hypot(_ x: Self, _ y: Self) -> Self
     static func copysign(_ lhs: Self, _ rhs: Self) -> Self
 }
@@ -151,7 +151,7 @@ public protocol FloatOrDouble: FloatingPoint {
 }
 
 @_transparent public func nextafter<F: FloatOrDouble>(_ lhs: F, _ rhs: F) -> F {
-    return F.nextafter(lhs, rhs: rhs)
+    return F.nextafter(lhs, rhs)
 }
 
 @_transparent public func hypot<F: FloatOrDouble>(_ x: F, _ y: F) -> F {

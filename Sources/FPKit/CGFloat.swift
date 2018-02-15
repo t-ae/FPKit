@@ -110,7 +110,7 @@ extension CGFloat: FloatOrDouble {
         return Foundation.nearbyint(x)
     }
     
-    @_transparent public static func nextafter(_ lhs: CGFloat, rhs: CGFloat) -> CGFloat {
+    @_transparent public static func nextafter(_ lhs: CGFloat, _ rhs: CGFloat) -> CGFloat {
         return Foundation.nextafter(lhs, rhs)
     }
     
